@@ -16,15 +16,14 @@ public class Auto {
                 cantAsientos++;
             }
         }
-        return cantAsientos
+        return cantAsientos;
     }
 
     String verificarIntegridad(){
         if (Auto.registro && Asiento.registro == motor.registro){
             return "Auto original";
-        }
-        else:{
-            return "Las piezas no son originales";
-        }
+        } 
+        return "Las piezas no son originales";
+        
     }
 }
