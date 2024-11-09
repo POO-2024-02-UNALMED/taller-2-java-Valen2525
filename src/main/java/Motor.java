@@ -5,6 +5,7 @@ public class Motor {
     String tipo;
     int registro;
 
+    
     void cambiarRegistro(int numeroRegistro){
         this.registro = numeroRegistro;
     }
