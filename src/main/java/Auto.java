@@ -21,14 +21,11 @@ public class Auto {
 
     String verificarIntegridad(){
         for(Asiento asiento : asientos){
-            if (this.registro == motor.registro && this.registro == asiento.registro){
-                return "Auto original";
-
-            } else {
+            if (this.registro != motor.registro || this.registro != asiento.registro){
                 return "Las piezas no son originales";
-            }
-            
-            
+
+            } 
         } 
+        return "Auto original";
     }
 }
